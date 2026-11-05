@@ -1,0 +1,249 @@
+<title>Conoce ChatGPT</title>
+<meta name="description" content="Página escolar sobre OpenAI y ChatGPT: la empresa, cómo funciona, su historia y cómo usarlo de forma responsable.">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<!-- ===================== PORTADA ===================== -->
+    <header class="header" id="inicio">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="#inicio"><span class="logo__dot" aria-hidden="true"></span>Conoce ChatGPT</a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="#empresa">La empresa</a></li>
+            <li><a href="#funciona">Cómo funciona</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#responsable">Úsalo bien</a></li>
+          </ul>
+          <button class="nav__menu__btn" id="menu-btn" aria-label="Abrir menú" aria-expanded="false">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+          </button>
+          <div class="nav__action__btn">
+            <a class="btn" href="https://chatgpt.com" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Probar ChatGPT
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h3 class="section__subheader">GUÍA ESCOLAR DE INTELIGENCIA ARTIFICIAL</h3>
+          <h1 class="section__header">Conoce la empresa detrás de ChatGPT</h1>
+          <div class="chat__demo" aria-label="Ejemplo de conversación">
+            <p class="chat__msg chat__msg--user">¿Qué es ChatGPT?</p>
+            <p class="chat__msg chat__msg--ai"><span id="typing"></span><span class="chat__caret" aria-hidden="true"></span></p>
+          </div>
+          <div class="scroll__btn">
+            <a href="#empresa">
+              Baja para aprender más
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="6 13 12 19 18 13"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <span>Síguenos</span>
+          <a href="#" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.5 6.4a2.8 2.8 0 0 0-2-2C18.9 4 12 4 12 4s-6.9 0-8.5.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 12a29 29 0 0 0 .5 5.6 2.8 2.8 0 0 0 2 2c1.6.4 8.5.4 8.5.4s6.9 0 8.5-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 23 12a29 29 0 0 0-.5-5.6z"/><polygon points="9.8 15.5 15.5 12 9.8 8.5 9.8 15.5"/></svg></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="about">
+      <!-- ===================== CIFRAS (números animados) ===================== -->
+      <div class="section__container stats" id="cifras">
+        <div class="stat reveal">
+          <p class="stat__num" data-value="2015">2015</p>
+          <p class="stat__label">año en que nace OpenAI</p>
+        </div>
+        <div class="stat reveal">
+          <p class="stat__num" data-value="2022">2022</p>
+          <p class="stat__label">lanzamiento de ChatGPT (noviembre)</p>
+        </div>
+        <div class="stat reveal">
+          <p class="stat__num" data-value="5" data-suffix=" días">5 días</p>
+          <p class="stat__label">para llegar a 1 millón de usuarios</p>
+        </div>
+        <div class="stat reveal">
+          <p class="stat__num" data-value="100" data-suffix=" M">100 M</p>
+          <p class="stat__label">de usuarios en unos 2 meses (estimación)</p>
+        </div>
+        <p class="stats__hint">Toca una cifra para verla girar otra vez.</p>
+      </div>
+
+      <div class="section__container about__container">
+
+        <!-- ===================== 01 LA EMPRESA ===================== -->
+        <div class="about__image about__image-1 reveal" id="empresa">
+          <div class="logo-card">
+            <img src="img/logo-chatgpt.png" alt="Logo de ChatGPT" />
+          </div>
+        </div>
+        <div class="about__content about__content-1 reveal">
+          <h3 class="section__subheader">LA EMPRESA</h3>
+          <h2 class="section__header">¿Quién es OpenAI?</h2>
+          <p>
+            OpenAI es la empresa estadounidense que creó ChatGPT. Se fundó en
+            diciembre de 2015 en San Francisco, California, como un laboratorio
+            de investigación en inteligencia artificial. Entre sus fundadores
+            están Sam Altman, Greg Brockman, Ilya Sutskever y Elon Musk. Su
+            misión es lograr que la inteligencia artificial general beneficie a
+            toda la humanidad.
+          </p>
+          <ul class="chips">
+            <li>Fundada en 2015</li>
+            <li>San Francisco, EE. UU.</li>
+            <li>Investigación en IA</li>
+          </ul>
+          <div class="about__btn">
+            <a href="https://openai.com/about" target="_blank" rel="noopener">
+              Leer más en su sitio
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- ===================== 02 CÓMO FUNCIONA ===================== -->
+        <div class="about__image about__image-2 reveal" id="funciona">
+          <img class="photo" src="img/chatgpt-celular.webp" alt="Celular con ChatGPT en la pantalla sobre el teclado de una laptop" />
+        </div>
+        <div class="about__content about__content-2 reveal">
+          <h3 class="section__subheader">EL PRODUCTO</h3>
+          <h2 class="section__header">¿Cómo funciona ChatGPT?</h2>
+          <p>
+            ChatGPT es un asistente que conversa por escrito. Funciona con un
+            modelo de lenguaje llamado GPT ("Generative Pre-trained
+            Transformer"), que aprendió de una enorme cantidad de textos a
+            predecir cuál es la siguiente palabra más probable. Después,
+            personas lo entrenaron con ejemplos y calificaciones para que sus
+            respuestas fueran más útiles y seguras.
+          </p>
+          <ol class="steps">
+            <li><strong>Escribes</strong> una pregunta o instrucción.</li>
+            <li><strong>El modelo</strong> divide el texto en pedacitos llamados tokens.</li>
+            <li><strong>Genera</strong> la respuesta palabra por palabra.</li>
+          </ol>
+          <div class="about__btn">
+            <a href="#historia">
+              Ver su historia
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- ===================== 03 HISTORIA ===================== -->
+        <div class="about__image about__image-3 reveal" id="historia">
+          <ol class="timeline" aria-label="Línea de tiempo de OpenAI">
+            <li><strong>2015</strong><span>Nace OpenAI como laboratorio de investigación sin fines de lucro.</span></li>
+            <li><strong>2019</strong><span>Crea una empresa con ganancias limitadas para financiar su investigación.</span></li>
+            <li><strong>2021</strong><span>Presenta DALL·E, que crea imágenes a partir de texto.</span></li>
+            <li><strong>Nov. 2022</strong><span>Lanza ChatGPT. En unos dos meses llega a 100 millones de usuarios, según estimaciones de la época.</span></li>
+            <li><strong>2023</strong><span>Llega GPT-4, un modelo más capaz que también entiende imágenes.</span></li>
+            <li><strong>Hoy</strong><span>Sigue lanzando nuevos modelos y herramientas de voz, imagen y video.</span></li>
+          </ol>
+        </div>
+        <div class="about__content about__content-3 reveal">
+          <h3 class="section__subheader">LA HISTORIA</h3>
+          <h2 class="section__header">De laboratorio a herramienta mundial</h2>
+          <p>
+            En pocos años, OpenAI pasó de publicar investigaciones a crear
+            herramientas que usan millones de personas. Además de ChatGPT,
+            tiene otros productos como DALL·E para imágenes, Whisper para
+            convertir voz en texto y Sora para crear videos.
+          </p>
+          <ul class="chips">
+            <li>ChatGPT</li>
+            <li>DALL·E</li>
+            <li>Whisper</li>
+            <li>Sora</li>
+          </ul>
+          <div class="about__btn">
+            <a href="#responsable">
+              Cómo usarlo bien
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- ===================== 04 ÚSALO BIEN ===================== -->
+        <div class="about__image about__image-4 reveal" id="responsable">
+          <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Escudo con una marca de verificación">
+            <rect width="400" height="300" rx="10" fill="#10303d"/>
+            <path d="M200 50 l90 34 v60 c0 60-45 92-90 108 c-45-16-90-48-90-108 v-60 z" fill="#1d4250" stroke="#e9c675" stroke-width="4"/>
+            <polyline points="160 152 190 182 245 122" fill="none" stroke="#e9c675" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="about__content about__content-4 reveal">
+          <h3 class="section__subheader">ÚSALO BIEN</h3>
+          <h2 class="section__header">Usa la IA de forma responsable</h2>
+          <p>
+            ChatGPT es una gran ayuda para aprender, pero no siempre tiene la
+            razón. Puede inventar datos con mucha seguridad, así que úsalo como
+            apoyo y no como única fuente.
+          </p>
+          <ul class="checks">
+            <li>Revisa los datos importantes en otras fuentes.</li>
+            <li>Úsalo para entender un tema, no para copiar la tarea.</li>
+            <li>No compartas contraseñas ni datos personales.</li>
+            <li>Di cuándo usaste IA en un trabajo escolar.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== IMAGEN QUE SE DESHACE AL BAJAR ===================== -->
+    <section class="dissolve" id="disolver">
+      <div class="dissolve__track" id="dissolve-track">
+        <div class="dissolve__sticky">
+          <div class="section__container dissolve__inner">
+            <div class="dissolve__text">
+              <h3 class="section__subheader">BAJA DESPACIO</h3>
+              <h2 class="section__header">Del laboratorio a tu bolsillo</h2>
+              <p id="dissolve-caption">Así empezó: un logo y una idea en un laboratorio de investigación de San Francisco.</p>
+              <div class="dissolve__bar" aria-hidden="true"><span id="dissolve-bar"></span></div>
+            </div>
+            <div class="dissolve__stage">
+              <img class="dissolve__back" src="img/chatgpt-celular.webp" alt="Celular con ChatGPT en la pantalla sobre una laptop" />
+              <canvas id="dissolve-canvas" aria-hidden="true"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PIE ===================== -->
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#inicio"><span class="logo__dot" aria-hidden="true"></span>Conoce ChatGPT</a>
+          </div>
+          <p>
+            Página informativa hecha como proyecto escolar. No es una página
+            oficial y no tiene relación con OpenAI.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>En esta página</h4>
+          <ul class="footer__links">
+            <li><a href="#empresa">La empresa</a></li>
+            <li><a href="#funciona">Cómo funciona</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#responsable">Úsalo bien</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Sitios oficiales</h4>
+          <ul class="footer__links">
+            <li><a href="https://openai.com" target="_blank" rel="noopener">openai.com</a></li>
+            <li><a href="https://chatgpt.com" target="_blank" rel="noopener">chatgpt.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">© 2026 Conoce ChatGPT · Proyecto escolar</div>
+    </footer>
+
+    <script src="js/main.js"></script>
